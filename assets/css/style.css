@@ -486,7 +486,7 @@ header .navbar ul li a:hover {
   padding: 10px;
   border-radius: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  background: rgba(0, 0, 22, 0.9);
+  background: rgb(0, 0, 0);
   transition: 0.2s;
 }
 .skills .container .bar:hover {
@@ -1218,5 +1218,9 @@ form .button-area {
 }
 #scroll-top.active {
   top: calc(100% - 12rem);
+}
+.logo {
+  width: 48px;
+  height: 48px;
 }
 /* scroll top ends */

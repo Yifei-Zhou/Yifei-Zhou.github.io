@@ -86,7 +86,7 @@ function showSkills(skills) {
         skillHTML += `
         <div class="bar">
               <div class="info">
-                <img src=${skill.icon} alt="skill" />
+                <img src=${skill.icon} alt="skill" class="logo"/>
                 <span>${skill.name}</span>
               </div>
             </div>`
@@ -138,8 +138,44 @@ function showProjects(projects) {
 
 const skills = [
     {
-        "name": "ReactJS",
+        "name": "Python",
+        "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
+    },
+    {
+        "name": "Java",
+        "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
+    },
+    {
+        "name": "JavaScript",
+        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
+    },
+    {
+        "name": "TypeScript",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png"
+    },
+    {
+        "name": "C++",
+        "icon": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
+    },
+    {
+        "name": "PHP",
+        "icon": "https://img.icons8.com/offices/48/000000/php-logo.png"
+    },
+    {
+        "name": "React",
         "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
+    },
+    {
+        "name": "Angular",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png"
+    },
+    {
+        "name": "Flask",
+        "icon": "https://www.bairesdev.com/wp-content/uploads/2021/08/Flask-1.svg"
+    },
+    {
+        "name": "Spring Boot",
+        "icon": "https://pbs.twimg.com/profile_images/1235868806079057921/fTL08u_H_400x400.png"
     },
     {
         "name": "ExpressJS",
@@ -148,70 +184,6 @@ const skills = [
     {
         "name": "NodeJS",
         "icon": "https://img.icons8.com/color/48/000000/nodejs.png"
-    },
-    {
-        "name": "Redux",
-        "icon": "https://img.icons8.com/color/48/000000/redux.png"
-    },
-    {
-        "name": "Firebase",
-        "icon": "https://img.icons8.com/color/48/000000/firebase.png"
-    },
-    {
-        "name": "Android",
-        "icon": "https://img.icons8.com/fluency/48/000000/android-os.png"
-    },
-    {
-        "name": "MaterialUI",
-        "icon": "https://img.icons8.com/color/48/000000/material-ui.png"
-    },
-    {
-        "name": "ChakraUI",
-        "icon": "https://img.icons8.com/color/48/000000/chakra-ui.png"
-    },
-    {
-        "name": "TailwindCSS",
-        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/48px-Tailwind_CSS_Logo.png"
-    },
-    {
-        "name": "Bootstrap",
-        "icon": "https://img.icons8.com/color/48/000000/bootstrap.png"
-    },
-    {
-        "name": "Sass",
-        "icon": "https://img.icons8.com/color/48/000000/sass.png"
-    },
-    {
-        "name": "HTML5",
-        "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
-    },
-    {
-        "name": "CSS3",
-        "icon": "https://img.icons8.com/color/48/000000/css3.png"
-    },
-    {
-        "name": "JavaScript",
-        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
-    },
-    {
-        "name": "Java",
-        "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
-    },
-    {
-        "name": "Kotlin",
-        "icon": "https://img.icons8.com/color/48/000000/kotlin.png"
-    },
-    {
-        "name": "PHP",
-        "icon": "https://img.icons8.com/offices/48/000000/php-logo.png"
-    },
-    {
-        "name": "Python",
-        "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
-    },
-    {
-        "name": "C++",
-        "icon": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
     },
     {
         "name": "MongoDB",
@@ -226,37 +198,65 @@ const skills = [
         "icon": "https://img.icons8.com/color/48/000000/postgreesql.png"
     },
     {
+        "name": "Redis",
+        "icon": "https://www.tothenew.com/blog/wp-ttn-blog/uploads/2023/09/redis_logo-1.png"
+    },
+    {
+        "name": "REST API",
+        "icon": "https://media.licdn.com/dms/image/D4D12AQEeNNHq05k7MA/article-cover_image-shrink_720_1280/0/1687786979245?e=2147483647&v=beta&t=AVc2G-hvHNjTMklQtEt6qlby2l79Bf5dBBkUB5DBRe0"
+    },
+    {
+        "name": "Docker",
+        "icon": "https://www.docker.com/wp-content/uploads/2023/05/symbol_blue-docker-logo.png"
+    },
+    {
+        "name": "Azure",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/48px-Microsoft_Azure.svg.png"
+    },
+    {
         "name": "AWS",
         "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png"
     },
     {
-        "name": "Heroku",
-        "icon": "https://img.icons8.com/color/48/000000/heroku.png"
+        "name": "Kubernetes",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/48px-Kubernetes_logo_without_workmark.svg.png"
     },
     {
-        "name": "Netlify",
-        "icon": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png"
+        "name": "Kafka",
+        "icon": "https://svn.apache.org/repos/asf/kafka/site/logos/originals/png/ICON%20-%20White%20on%20Transparent.png"
     },
     {
-        "name": "DigitalOcean",
-        "icon": "https://img.icons8.com/ios-filled/48/0080FF/digitalocean.png"
-    },
-    {
-        "name": "jQuery",
-        "icon": "https://img.icons8.com/ios-filled/48/1169ae/jquery.png"
-    },
-    {
-        "name": "Git VCS",
-        "icon": "https://img.icons8.com/color/48/000000/git.png"
+        "name": "Linux",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/48px-Tux.svg.png"
     },
     {
         "name": "GitHub",
         "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
     },
     {
-        "name": "WordPress",
-        "icon": "https://img.icons8.com/color/48/000000/wordpress.png"
-    }    
+        "name": "TailwindCSS",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/48px-Tailwind_CSS_Logo.png"
+    },
+    {
+        "name": "Bootstrap",
+        "icon": "https://img.icons8.com/color/48/000000/bootstrap.png"
+    },
+    {
+        "name": "HTML5",
+        "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
+    },
+    {
+        "name": "CSS3",
+        "icon": "https://img.icons8.com/color/48/000000/css3.png"
+    },
+    {
+        "name": "PyTorch",
+        "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTABCjpuMscLQRv3Qn612CuXy7wBF23Xs9AOQ&s"
+    },
+    {
+        "name": "TensorFlow",
+        "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6iQyYphUHhLEUchqyhIwsRMe0G9aqVFjUaA&s"
+    },
 ];
 
 showSkills(skills);
