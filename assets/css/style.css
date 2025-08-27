@@ -778,7 +778,7 @@ header .navbar ul li a:hover {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
-  width: 70%;
+  width: 60%;
 }
 /*circles on timeline*/
 .experience .container::after {
@@ -799,7 +799,7 @@ header .navbar ul li a:hover {
   font-family: "Font Awesome\ 5 Free";
 }
 .experience .left {
-  left: -20%;
+  left: -10%;
 }
 .experience .right {
   left: 50%;
