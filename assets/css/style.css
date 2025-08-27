@@ -843,12 +843,15 @@ header .navbar ul li a:hover {
   padding-top: 1.5rem;
   padding-left: 1.5rem;
 }
+.experience .content .tag h2 {
+  font-size: 2.5rem;
+}
 .experience .content .desc {
   margin-left: 1.5rem;
   padding-bottom: 1rem;
 }
 .experience .content .desc h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 .experience .content .desc p {
@@ -1227,6 +1230,37 @@ form .button-area {
 /* scroll top ends */
 
 .indent {
-  display: block;
   margin-left: 20px;
+}
+
+/* tight wrapping inside a bullet, bigger gap between bullets */
+.xp-list { 
+  margin: 0; 
+  padding-left: 1.25rem; 
+  font-size: 1.5rem;
+}
+
+.xp-list li { 
+  line-height: 1.35;  /* inner line spacing (wraps) */
+}
+
+.xp-list li + li { 
+  margin-top: 10px;   /* gap between bullets */
+}
+
+.xp-list li.sub { 
+  margin-left: 1rem; 
+  list-style-type: none;      /* remove default dot */
+  position: relative;         /* needed for custom dash placement */
+  padding-left: 1.4rem;         /* space for dash */
+}
+
+.xp-list li.sub + li.sub { 
+  margin-top: 6px;    /* smaller gap between sub-bullets */
+}
+
+.xp-list li.sub::before {
+  content: "–";       /* dash bullet */
+  position: absolute; 
+  left: 0;
 }
