@@ -1225,3 +1225,8 @@ form .button-area {
   height: 48px;
 }
 /* scroll top ends */
+
+.indent {
+  display: block;
+  margin-left: 20px;
+}
