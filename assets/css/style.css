@@ -1239,28 +1239,35 @@ form .button-area {
   padding-left: 1.25rem; 
   font-size: 1.5rem;
 }
-
 .xp-list li { 
   line-height: 1.35;  /* inner line spacing (wraps) */
 }
-
 .xp-list li + li { 
   margin-top: 10px;   /* gap between bullets */
 }
-
 .xp-list li.sub { 
   margin-left: 1rem; 
   list-style-type: none;      /* remove default dot */
   position: relative;         /* needed for custom dash placement */
   padding-left: 1.4rem;         /* space for dash */
 }
-
 .xp-list li.sub + li.sub { 
   margin-top: 6px;    /* smaller gap between sub-bullets */
 }
-
 .xp-list li.sub::before {
   content: "–";       /* dash bullet */
   position: absolute; 
   left: 0;
+}
+
+/* About section list styling */
+.ab-list {
+  margin: 0;
+  padding-left: 1.25rem;  /* standard indent */
+  font-size: 1.5rem;        /* smaller than xp-list (adjust as needed) */
+  line-height: 1.5;       /* good readability */
+  list-style-type: disc;  /* standard dot bullets */
+}
+.ab-list li + li {
+  margin-top: 6px;        /* space between items */
 }
